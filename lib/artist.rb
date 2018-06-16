@@ -18,9 +18,9 @@ class Artist
     @@all << self
   end
 
-  # define the @@all method 
-  def self.all 
-    @@all 
+  # define the @@all method
+  def self.all
+    @@all
   end
 
 end
