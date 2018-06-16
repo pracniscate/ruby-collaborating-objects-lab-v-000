@@ -12,8 +12,8 @@ class MP3Importer
     files = [] # start with an empty collection
     Dir.new(self.path).each do |file|
       files << file
-    end 
-    files # return 
+    end
+    files # return
   end
 
   def import
