@@ -5,7 +5,7 @@ class MP3Importer
 
   def initialize
 
-  end  
+  end
 
   def files(filename)
     song = self.new
@@ -18,4 +18,4 @@ class MP3Importer
   Song.new_by_filename(filename) }
   end
 
-end  
+end
