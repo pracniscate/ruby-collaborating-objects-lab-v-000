@@ -10,6 +10,7 @@ class Song
     artist.add_song(self)
   end
 
+  # create a new instance of a song from the file that's passed in
   def self.new_by_filename(file)
     song_name = file.split(" - ")[1]
     artist = file.split(" - ")[0]
