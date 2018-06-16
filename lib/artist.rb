@@ -15,7 +15,7 @@ class Artist
 
   # add the artist instance to the @@all class variable
   def save
-    @@all << self 
+    @@all << self
   end
 
 end
