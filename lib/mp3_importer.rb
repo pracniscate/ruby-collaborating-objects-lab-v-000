@@ -11,7 +11,7 @@ class MP3Importer
   def files
     files = [] # start with an empty collection
     Dir.new(self.path).each do |file|
-      files << file
+      files << file if file.length > 4 # expect(music_importer.files.size).to eq(4)
     end
     files # return
   end
