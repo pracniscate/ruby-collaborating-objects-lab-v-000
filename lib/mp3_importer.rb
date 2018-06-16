@@ -3,6 +3,10 @@
 class MP3Importer
   attr_accessor :title
 
+  def initialize
+
+  end  
+
   def files(filename)
     song = self.new
     song.title = filename.split(" - ")[1]
