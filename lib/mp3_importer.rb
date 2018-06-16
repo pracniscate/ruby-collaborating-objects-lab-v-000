@@ -7,11 +7,13 @@ class MP3Importer
     @path = path
   end
 
+  # load all the mp3 files in the path directory
   def files
-    files = []
-    song = self.new
-    song.title = filename.split(" - ")[1]
-    song
+    files = [] # start with an empty collection
+    Dir.new(self.path).each do |file|
+      files << file
+    end 
+    files # return 
   end
 
   def import
