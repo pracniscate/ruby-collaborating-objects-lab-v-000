@@ -7,15 +7,17 @@ class MP3Importer
     @path = path
   end
 
-  def files(filename)
+  def files
+    files = []
     song = self.new
     song.title = filename.split(" - ")[1]
     song
   end
 
-  def import(list_of_filenames)
-    list_of_filenames.each{ |filename|
-  Song.new_by_filename(filename) }
+  def import
+    self.files.each do |filename|
+      Song.new_by_filename(filename) # go to the Song class
+    end
   end
 
 end
